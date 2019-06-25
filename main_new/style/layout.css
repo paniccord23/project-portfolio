@@ -1,0 +1,586 @@
+* {
+  box-sizing: border-box;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+html, body {
+  overflow-x: hidden;
+}
+nav {
+  width: 100%;
+  height: 45px;
+  background: #101010;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 0 5%;
+  position: fixed;
+  z-index: 5;
+}
+nav a {
+  text-decoration: none;
+  color: #fff;
+  font-size: 22px;
+	font-family: "GOTHICB";
+  font-weight: bold;
+}
+.more-nav {
+	display: none;
+}
+h1, h2, h3, h5 {
+  font-family: "GOTHICB";
+  font-weight: bold;
+}
+h5 {
+  color: #333333;
+  font-size: 12px;
+  padding-bottom: 5px;
+}
+
+h1 {
+  font-size: 24px;
+  padding-bottom: 4px;
+}
+main {
+  background-color: #f0f0f0;
+}
+/* высота первого блока */
+.pict {
+    position: relative;
+    right: calc((100vw - var(--container-width)) / 2);
+    --container-width: 98vw;
+    width: 118vw;
+    height: 81vw;
+    top: 36px;
+    margin-bottom: 20px;
+}
+
+.left {
+  height: 578px;
+}
+.left-info {
+  padding-top: 10px;
+  padding-left: 5%;
+}
+.more-info {
+  font-family: "GOTHICB";
+  font-weight: bold;
+  text-decoration: none;
+  color: #000;
+  font-size: 16px;
+}
+p {
+  color: #000;
+  font-family: 'Roboto', sans-serif;
+  line-height: 130%;
+  font-size: 18px;
+  padding-top: 17px;
+  padding-bottom: 22px;
+  width: 287px;
+}
+/* ширина блока текста */
+.line {
+  width: 42px;
+}
+.right {
+  padding-left: 20px;
+}
+.right-pic {
+  margin-bottom: 20px;
+  width: 68vw;
+}
+.bag {
+  display: flex;
+  height: 370px;
+  justify-content: center;
+  align-items: baseline;
+}
+.bag-pic {
+  width: 122vw;
+}
+.poster {
+  width: 70vw;
+}
+.more-post {
+  height: 850px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.space-pic {
+  width: 103vw;
+  margin-bottom: 20px;
+  position: relative;
+  left: -7%;
+}
+.pict-b {
+  width: 133vw;
+  margin-top: 80px;
+}
+.right-last {
+  padding-top: 70px;
+height: 730px;
+padding-left: 20px;
+}
+.name {
+  display: unset;
+  font-size: 16px;
+}
+footer {
+  background-color: #101010;
+  height: 200px;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  justify-content: space-between;
+  padding-top: 50px;
+
+}
+footer a {
+  color: #fff;
+  text-decoration: none;
+  font-size: 14px;
+  font-family: "impact";
+  padding-bottom: 10px;
+}
+footer span {
+  color: #fff;
+  font-size: 16px;
+  font-family: "impact";
+  padding-bottom: 10px;
+}
+footer .new-logo {
+  width: 25vw;
+}
+.icon img {
+  width: 9vw;
+  padding-right: 10px;
+}
+.direct, .pers {
+  width: 200px;
+  display: flex;
+  flex-direction: column;
+}
+.icon {
+  display: flex;
+  flex-direction: row;
+  align-items: baseline;
+
+}
+.direct, .pers {
+  display: none;
+}
+@media screen and (min-width: 320px;) {
+  .bag-pic {
+    height: 300px;
+  }
+  .left-info {
+    height: 616px;
+  }
+  .pict-b {
+      position: relative;
+      top: 21px;
+      right: calc((100vw - var(--container-width)) / 2);
+      --container-width: 91%;
+      width: 68vw;
+      height: 45vw;
+      z-index: 2;
+  }
+  .bag {
+    height: 200px;
+  }
+}
+
+@media screen and (min-width: 550px) {
+  .name {
+    display: none;
+  }
+  h1 {
+    font-size: 32px;
+  }
+  h5 {
+    font-size: 14px;
+  }
+  p {
+    font-size: 22px;
+    width: 358px;
+  }
+  .left {
+    height: 470px;
+    justify-content: flex-end;
+    display: flex;
+    flex-direction: row-reverse;
+  }
+  .left-info {
+    width: 100vw;
+    padding-top: 100px;
+  }
+  .bag {
+    height: 74vw;
+  }
+  .bag-pic {
+    width: 100vw;
+  }
+  .pict-b {
+    position: relative;
+    top: -91px;
+    right: calc((100vw - var(--container-width)) / 2);
+    --container-width: 95%;
+    width: 68vw;
+    height: 45vw;
+    z-index: 2;
+  }
+  .right {
+    height: 486px;
+    display: flex;
+    justify-content: space-around;
+    padding-bottom: 70px;
+  }
+  .right-pic {
+    width: 30vw;
+    height: 41vw;
+  }
+  .pict {
+    position: relative;
+    right: calc((79vw - var(--container-width)) / 2);
+    --container-width: 59vw;
+    width: 75vw;
+    height: 55vw;
+    top: 29px;
+    z-index: 2;
+  }
+  .more-post {
+    flex-direction: row;
+    align-items: baseline;
+    height: 620px;
+  }
+  .poster {
+    width: 37vw;
+    margin-right: 3%;
+  }
+  .space-pic {
+    width: 58vw;
+    padding-left: 33px;
+    height: 40vw;
+  }
+  .right-last {
+    padding-top: 20px;
+    display: flex;
+    height: 583px;
+    padding-left: 5%;
+  }
+  .right-pic {
+    width: 37vw;
+    height: 52vw;
+    }
+  .right-info {
+    padding-top: 26px;
+    padding-left: 5%;
+  }
+  footer {
+    flex-direction: row;
+    background-color: #101010;
+    height: 180px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0 5%;
+  }
+  footer a {
+    color: #fff;
+    text-decoration: none;
+    font-size: 14px;
+    font-family: "impact";
+    padding-bottom: 10px;
+  }
+  footer span {
+    color: #fff;
+    font-size: 16px;
+    font-family: "impact";
+    padding-bottom: 10px;
+  }
+  footer .new-logo {
+    width: 17vw;
+  }
+  .icon img {
+    width: 5vw;
+    padding-right: 10px;
+  }
+  .direct, .pers {
+    display: unset;
+    width: 200px;
+    display: flex;
+    flex-direction: column;
+  }
+  .icon {
+    display: flex;
+    flex-direction: row;
+    align-items: baseline;
+  }
+}
+
+@media screen and (min-width: 1024px) {
+  .name {
+    display: none;
+  }
+  /* navigation */
+  nav {
+		height: 68px;
+		justify-content: flex-start;
+	}
+  nav {
+  		height: 68px;
+  		justify-content: flex-start;
+  	}
+  	.more-nav {
+  		display: unset;
+  		padding-left: 102px;
+  	}
+  	.more-nav a {
+      display: inline-block;
+      line-height: 0.2;
+      text-decoration: none;
+      cursor: pointer;
+  }
+  	.more-nav a:after {
+      background-color: #FDE40E;
+      display: block;
+      content: "";
+      width: 0%;
+      height: 3px;
+      margin-left: -10px;
+
+      -webkit-transition: width .3s ease-in-out;
+      -moz--transition: width .3s ease-in-out;
+      transition: width .3s ease-in-out;
+  }
+  .more-nav a:hover:after,
+  .more-nav a:focus:after {
+      width: 100%;
+      padding-left: 20px;
+  }
+  	.more-nav a {
+  		padding-right: 30px;
+  	}
+    .more {
+      cursor: pointer;
+    }
+  	.first {
+  		height: 50px;
+  	}
+  	.last {
+  		display: none;
+  	}
+  h1 {
+    font-size: 54px;
+    padding-bottom: 10px;
+  }
+  h5 {
+    font-size: 18px;
+  }
+  p {
+    font-size: 32px;
+    width: 579px;
+  }
+  /* картинка слева */
+  .left {
+    display: flex;
+    flex-direction: row-reverse;
+    height: 720px;
+    justify-content: flex-end;
+  }
+  .left-info {
+    padding-top: 142px;
+    padding-left: 5%;
+  }
+  .bag {
+    display: flex;
+    justify-content: center;
+    height: 960px;
+  }
+  .bag-pic {
+    height: 70vw;
+    width: 96vw;
+  }
+  .pict-b {
+    position: relative;
+    top: 21px;
+    right: calc((100vw - var(--container-width)) / 2);
+    --container-width: 104%;
+    width: 832px;
+    height: 44vw;
+    z-index: 2;
+  }
+  .pict {
+    position: relative;
+    right: calc((100vw - var(--container-width)) / 2);
+    --container-width: 149%;
+    --container-width: 82%;
+    width: 71vw;
+    height: 48vw;
+    /* bottom: 101px; */
+    top: 42px;
+    }
+    /*картинка справа  */
+    .right {
+      display: flex;
+      flex-direction: row;
+      padding-left: 3%;
+      height: 555px;
+  }
+  .right-info {
+    padding-top: 20px;
+    padding-left: 8%;
+    height: 500px;
+  }
+  .right-pic {
+
+    bottom: -10;
+    width: 30vw;
+    height: 41vw;
+  }
+  .right-last {
+    display: flex;
+    padding-left: 5%;
+  }
+  .more-post {
+    padding-top: 45px;
+    height: 700px;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+  }
+  .poster {
+    width: 32vw;
+    height: 41vw;
+  }
+  .space-pic {
+    left: -1%;
+    margin-top: 17px;
+    width: 48vw;
+    height: 32vw;
+  }
+  .line {
+    width: 96px;
+  }
+  .about-pr {
+    padding-left: 22%;
+  }
+  footer {
+    flex-direction: row;
+    background-color: #101010;
+    height: 180px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0 5%;
+  }
+  footer a {
+    color: #fff;
+    text-decoration: none;
+    font-size: 14px;
+    font-family: "impact";
+    padding-bottom: 10px;
+  }
+  footer span {
+    color: #fff;
+    font-size: 16px;
+    font-family: "impact";
+    padding-bottom: 10px;
+  }
+  footer .new-logo {
+    width: 17vw;
+  }
+  .icon img {
+    width: 5vw;
+    padding-right: 10px;
+  }
+  .direct, .pers {
+    display: unset;
+    width: 200px;
+    display: flex;
+    flex-direction: column;
+  }
+  .icon {
+    display: flex;
+    flex-direction: row;
+    align-items: baseline;
+
+  }
+}
+@media screen and (min-width: 1440px) {
+  .left  {
+    height: 800px;
+  }
+  .bag {
+    height: 1070px;
+  }
+  .bag-pic {
+    width: 108vw;
+  }
+  .right  {
+    height: 645px;
+  }
+  .poster {
+    margin-right: 4%;
+  }
+  .more-post {
+    margin-bottom: 100px;
+  }
+  .space-pic {
+    left: -1%;
+    margin-top: 17px;
+    width: 53vw;
+    height: 33vw;
+  }
+  .pict-b {
+    position: relative;
+    top: -110px;
+    right: calc((100vw - var(--container-width)) / 2);
+    --container-width: 94%;
+    width: 884px;
+    height: 40vw;
+    z-index: 2;
+  }
+  footer {
+    background-color: #101010;
+    height: 180px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0 5%;
+  }
+  footer a {
+    color: #fff;
+    text-decoration: none;
+    font-size: 14px;
+    font-family: "impact";
+    padding-bottom: 10px;
+  }
+  footer span {
+    color: #fff;
+    font-size: 16px;
+    font-family: "impact";
+    padding-bottom: 10px;
+  }
+  footer .new-logo {
+    width: 17vw;
+  }
+  .icon img {
+    width: 5vw;
+    padding-right: 10px;
+  }
+  .direct, .pers {
+    display: unset;
+    width: 200px;
+    display: flex;
+    flex-direction: column;
+  }
+  .icon {
+    display: flex;
+    flex-direction: row;
+    align-items: baseline;
+
+  }
+}
